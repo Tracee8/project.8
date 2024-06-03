@@ -1,0 +1,78 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.skill{
+    margin: 20px;
+    width: 500px;
+}
+
+.skill_name{
+    color: cadetblue;
+    font-family: bold;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.bar_box{
+    background:ghostwhite;
+    position: relative;
+}
+
+.p5{
+    position: absolute;
+    right: 2px;
+    top: 5px;
+    color:blueviolet;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.html_skill{
+    animation: html 2s forwards;
+    width:100%;
+    background:yellow;
+    height: 20px;
+}
+
+.css_skill{
+    animation:css 2s forwards;
+    width: 100%;
+    background:blue;
+    height: 20px;
+}
+
+.jS_skill{
+    animation:javascript 2s forwards;
+    width: 100%;
+    background: black;
+    height: 20px;
+}
+
+@keyframes html{
+    to{
+        width: 90%;
+    }
+}
+@keyframes css{
+    to{
+        width: 80%;
+    }
+}
+@keyframes javascript{
+    to{
+        width: 50%;
+    }
+}
+@media(max-width:768px){
+    bar-box{
+        margin: 30px;
+    }
+}
